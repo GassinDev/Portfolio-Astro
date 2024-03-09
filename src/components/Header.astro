@@ -1,28 +1,53 @@
 <style>
-    div{
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px; 
+    }
+
+    div {
         position: fixed;
         top: -50px;
         transition: top 0.3s;
-        padding-bottom: 23px;
-    }
-
-    nav{
-        border-bottom: 1px solid white; 
+        padding-bottom: 30px;
     }
 
     div:hover {
-        top: 0; 
+        top: 0;
+    }
+
+    nav{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid white;
+        transition: padding-bottom 0.7s;
+    }
+
+    nav:hover{
+        padding-bottom: 10px;
+        transition: padding-bottom 0.7s;
+    }
+
+    .text-neon{
+        text-shadow: 0 0 20px #000;
+        transition: text-shadow 0.7s;
+    }
+
+    .text-neon:hover {
+        text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff3c00, 0 0 30px #ff3c00, 0 0 40px #ff3c00, 0 0 55px #ff3c00, 0 0 75px #ff3c00;
+        transition: text-shadow 0.7s;
     }
 </style>
 
-<header class="flex justify-between items-center">
+<header>
     <div>
-        <nav class="mt-2 justify-center">
-            <a class='mr-3 hover:border-t-rose-700 hover:border-b-rose-700 hover:border-l-orange-600 hover:border-r-orange-600 border border-transparent p-1 nav-link' href="/">Inicio</a>
-            <a class='mr-3 hover:border-t-rose-700 hover:border-b-rose-700 hover:border-l-orange-600 hover:border-r-orange-600 border border-transparent p-1 nav-link' href="/Sobre-mi">Sobre mí</a>
-            <a class='mr-3 hover:border-t-rose-700 hover:border-b-rose-700 hover:border-l-orange-600 hover:border-r-orange-600 border border-transparent p-1 nav-link' href="/Skills">Skills</a>
-            <a class='mr-3 hover:border-t-rose-700 hover:border-b-rose-700 hover:border-l-orange-600 hover:border-r-orange-600 border border-transparent p-1 nav-link' href="/Proyectos">Proyectos</a>
+        <nav>
+            <a class='ml-3 mr-3 text-neon nav-link' href="/">Inicio</a>
+            <a class='mr-3 text-neon nav-link' href="/Sobre-mi">Sobre mí</a>
+            <a class='mr-3 text-neon nav-link' href="/Skills">Skills</a>
+            <a class='mr-3 text-neon nav-link' href="/Proyectos">Proyectos</a>
         </nav>
     </div>
-   
 </header>
