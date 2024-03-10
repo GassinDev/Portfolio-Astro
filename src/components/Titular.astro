@@ -1,10 +1,21 @@
 <style>
     h1 {
-            color: #eb043b;
-            font-size: 100px;
-            text-shadow: 0 0 10px #000000; /* Aplica un brillo con una sombra roja */
-        }
+        color: #eb043b;
+        font-size: 100px;
+        text-shadow: 0 0 10px #000000; /* Aplica un brillo con una sombra roja */
+        opacity: 0; /* Inicialmente oculta el elemento */
+        animation: fadeIn 5s forwards; /* Aplica una animación de 1 segundo llamada "fadeIn" */
+    }
 
+    /* Define la animación de desvanecimiento */
+    @keyframes fadeIn {
+        from {
+            opacity: 0; /* Desde la opacidad 0 */
+        }
+        to {
+            opacity: 1; /* Hasta la opacidad 1 */
+        }
+    }
 </style>
 
 <section class="text-center mt-10">

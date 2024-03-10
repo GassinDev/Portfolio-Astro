@@ -1,0 +1,49 @@
+<style>
+    /* Animación para la columna 1 */
+    .columna-1 {
+        animation: aparecer-desde-izquierda 1s ease-out forwards;
+    }
+
+    /* Animación para la columna 2 */
+    .columna-2 {
+        animation: aparecer-desde-derecha 1s ease-out forwards;
+    }
+
+    @keyframes aparecer-desde-izquierda {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes aparecer-desde-derecha {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+<section class="flex justify-center items-center mt-8 p-2">
+  <div class="grid grid-cols-1 sm:grid-cols-2 w-full max-w-screen-lg gap-8 sm:gap-2 ">
+    <div class="flex justify-center items-center p-6">
+      <img class="columna-1 w-full sm:w-auto max-w-full h-auto" src="images/logo2024.png" alt="logo" />
+    </div>
+    <div class="p-6">
+      <p class="text-center columna-2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur,
+        dignissimos, commodi doloremque eaque inventore culpa, aspernatur harum
+        iste quia minima pariatur tempore nostrum nemo voluptatem asperiores
+        maiores. Maiores, nam quae!
+      </p>
+    </div>
+  </div>
+</section>
